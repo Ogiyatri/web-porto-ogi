@@ -101,19 +101,3 @@ build/
     ├── docker-compose.yml
     └── .env.example
 ```
-
-## Adding project screenshots
-
-Drop images into `public/images/projects/` with these exact filenames:
-
-```
-api-management.png
-sentiment-analysis.png
-smart-booking.png
-satria-muda.png
-sipd.png
-```
-
-## License
-
-MIT
