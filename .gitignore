@@ -11,8 +11,14 @@
 /.next/
 /out/
 
-# production
-/build
+# production (Next.js export output)
+/out
+
+# Ignore build artifacts but NOT build/docker config
+/build/**
+!/build/docker/
+!/build/docker/**
+/build/docker/.env
 
 # misc
 .DS_Store
@@ -26,7 +32,6 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
-build/docker/.env
 
 # vercel
 .vercel
