@@ -1,0 +1,31 @@
+version: "3.8"
+
+# Run from project root:
+#   docker compose -f build/docker/docker-compose.yml --env-file build/docker/.env up
+
+services:
+  # ── Production ────────────────────────────────────────────────────────────
+  web:
+    build:
+      context: ../..          # project root (Web-Porto/)
+      dockerfile: build/docker/Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  # ── Development (hot reload) ──────────────────────────────────────────────
+  web-dev:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - ../..:/app              # mount project root
+      - /app/node_modules       # preserve container's node_modules
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    command: sh -c "yarn install && yarn dev"
+    profiles:
+      - dev
