@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "about": "Tentang",
+    "skills": "Keahlian",
+    "experience": "Pengalaman",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "downloadCV": "Unduh CV"
+  },
+  "hero": {
+    "greeting": "Terbuka untuk project baru",
+    "name": "Ogi Yatri Malakiano",
+    "roles": ["Fullstack Developer", "Backend Engineer", "Frontend Developer", "DevOps Enthusiast"],
+    "description": "Saya membangun aplikasi web — mulai dari portal API pemerintah, dashboard analisis media sosial, hingga platform manajemen olahraga. Saat ini di Solusi Teknologi Kreatif, Jakarta Selatan.",
+    "cta": "Lihat proyek saya",
+    "hireCta": "Ayo ngobrol",
+    "scrollDown": "scroll ke bawah"
+  },
+  "about": {
+    "title": "Sedikit tentang saya",
+    "subtitle": "siapa yang ada di balik layar",
+    "description1": "Saya besar di Padang, Sumatera Barat dan kuliah Teknik Komputer di Universitas Andalas — lulus Cumlaude, yang sampai sekarang masih bikin saya sedikit kaget. Setelah lulus langsung pindah ke Jakarta dan bergabung dengan Solusi Teknologi Kreatif.",
+    "description2": "Sejak itu saya mengerjakan platform yang dipakai Kemendagri, DPR RI, dan organisasi olahraga nasional. Saya peduli dengan kode yang bersih, observabilitas yang baik, dan membangun sistem yang benar-benar tahan di production.",
+    "stats": {
+      "projects": "proyek selesai",
+      "modules": "modul backend",
+      "features": "fitur UI",
+      "experience": "tahun pengalaman"
+    },
+    "location": "Jakarta Selatan, Indonesia",
+    "availability": "Terbuka untuk proyek baru"
+  },
+  "skills": {
+    "title": "Tools yang saya pakai",
+    "subtitle": "hal-hal yang saya kerjakan setiap hari",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "devops": "DevOps & Tools"
+    }
+  },
+  "experience": {
+    "title": "Perjalanan karier",
+    "subtitle": "timeline pengalaman",
+    "present": "sekarang",
+    "items": []
+  },
+  "projects": {
+    "title": "Yang sudah saya bangun",
+    "subtitle": "pilihan pekerjaan nyata",
+    "viewLive": "Lihat langsung",
+    "viewCode": "Source code",
+    "privateRepo": "Repositori privat (codebase perusahaan)",
+    "status": {
+      "live": "Live",
+      "development": "Sedang dikerjakan"
+    }
+  },
+  "contact": {
+    "title": "Sapa saya",
+    "subtitle": "mari bangun sesuatu bersama",
+    "description": "Baik untuk pekerjaan, proyek kolaborasi, atau sekadar ngobrol soal teknologi — saya selalu senang mendengar dari orang-orang baru.",
+    "form": {
+      "name": "Nama kamu",
+      "email": "Email kamu",
+      "subject": "Ini tentang apa?",
+      "message": "Ceritakan lebih lanjut",
+      "send": "Kirim",
+      "sending": "Mengirim...",
+      "success": "Oke — saya akan segera balas.",
+      "error": "Terjadi kesalahan. Coba lagi?"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Berbasis di",
+      "availability": "Zona waktu"
+    }
+  },
+  "footer": {
+    "rights": "Hak cipta dilindungi.",
+    "builtWith": "Dibangun dengan Next.js & banyak kopi"
+  }
+}

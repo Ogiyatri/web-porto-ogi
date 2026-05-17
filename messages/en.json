@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "downloadCV": "Download CV"
+  },
+  "hero": {
+    "greeting": "Available for work",
+    "name": "Ogi Yatri Malakiano",
+    "roles": ["Fullstack Developer", "Backend Engineer", "Frontend Developer", "DevOps Enthusiast"],
+    "description": "I build full-stack apps — from government API portals and social media dashboards to sports management platforms. Currently at Solusi Teknologi Kreatif, South Jakarta.",
+    "cta": "See my work",
+    "hireCta": "Let's talk",
+    "scrollDown": "scroll down"
+  },
+  "about": {
+    "title": "A bit about me",
+    "subtitle": "who's behind the keyboard",
+    "description1": "I grew up in Padang, West Sumatra and studied Computer Engineering at Universitas Andalas — graduated Cumlaude, which still surprises me a little. Moved to Jakarta right after and joined Solusi Teknologi Kreatif.",
+    "description2": "Since then I've worked on platforms used by Kemendagri, DPR RI, and national sports organizations. I care about clean code, good observability, and building things that actually hold up in production.",
+    "stats": {
+      "projects": "projects shipped",
+      "modules": "backend modules",
+      "features": "UI features",
+      "experience": "year of exp."
+    },
+    "location": "South Jakarta, Indonesia",
+    "availability": "Open to new projects"
+  },
+  "skills": {
+    "title": "Tools I reach for",
+    "subtitle": "things I work with daily",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "devops": "DevOps & Tools"
+    }
+  },
+  "experience": {
+    "title": "Where I've been",
+    "subtitle": "the career timeline",
+    "present": "now",
+    "items": []
+  },
+  "projects": {
+    "title": "Things I've built",
+    "subtitle": "a selection of real work",
+    "viewLive": "Live site",
+    "viewCode": "Source",
+    "privateRepo": "Private repository (company codebase)",
+    "status": {
+      "live": "Live",
+      "development": "In progress"
+    }
+  },
+  "contact": {
+    "title": "Say hello",
+    "subtitle": "let's build something together",
+    "description": "Whether it's a job, a project, or just a chat about tech — I'm always happy to hear from people.",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "subject": "What's this about?",
+      "message": "Tell me more",
+      "send": "Send it",
+      "sending": "Sending...",
+      "success": "Got it — I'll get back to you soon.",
+      "error": "Something went wrong. Try again?"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Based in",
+      "availability": "Timezone"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js & a lot of coffee"
+  }
+}
