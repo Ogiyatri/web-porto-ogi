@@ -11,7 +11,7 @@
     "greeting": "Available for work",
     "name": "Ogi Yatri Malakiano",
     "roles": ["Fullstack Developer", "Backend Engineer", "Frontend Developer", "DevOps Enthusiast"],
-    "description": "I build full-stack apps — from government API portals and social media dashboards to sports management platforms. Currently at Solusi Teknologi Kreatif, South Jakarta.",
+    "description": "I've shipped production apps used by Kemendagri, DPR RI, and national organizations — the kind where real users depend on them daily. Currently building at Solusi Teknologi Kreatif, South Jakarta.",
     "cta": "See my work",
     "hireCta": "Let's talk",
     "scrollDown": "scroll down"
@@ -60,7 +60,7 @@
   "contact": {
     "title": "Say hello",
     "subtitle": "let's build something together",
-    "description": "Whether it's a job, a project, or just a chat about tech — I'm always happy to hear from people.",
+    "description": "Open to full-time roles, freelance projects, and the occasional late-night tech debate. Drop me a message — I reply to everything.",
     "form": {
       "name": "Your name",
       "email": "Your email",

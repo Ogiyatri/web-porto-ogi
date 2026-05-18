@@ -11,7 +11,7 @@
     "greeting": "Terbuka untuk project baru",
     "name": "Ogi Yatri Malakiano",
     "roles": ["Fullstack Developer", "Backend Engineer", "Frontend Developer", "DevOps Enthusiast"],
-    "description": "Saya membangun aplikasi web — mulai dari portal API pemerintah, dashboard analisis media sosial, hingga platform manajemen olahraga. Saat ini di Solusi Teknologi Kreatif, Jakarta Selatan.",
+    "description": "Saya sudah mengembangkan aplikasi production untuk Kemendagri, DPR RI, dan organisasi nasional — yang digunakan nyata oleh ribuan pengguna setiap harinya. Saat ini di Solusi Teknologi Kreatif, Jakarta Selatan.",
     "cta": "Lihat proyek saya",
     "hireCta": "Ayo ngobrol",
     "scrollDown": "scroll ke bawah"
@@ -60,7 +60,7 @@
   "contact": {
     "title": "Sapa saya",
     "subtitle": "mari bangun sesuatu bersama",
-    "description": "Baik untuk pekerjaan, proyek kolaborasi, atau sekadar ngobrol soal teknologi — saya selalu senang mendengar dari orang-orang baru.",
+    "description": "Terbuka untuk pekerjaan tetap, proyek freelance, dan diskusi teknologi kapan saja. Kirim pesan — saya balas semuanya.",
     "form": {
       "name": "Nama kamu",
       "email": "Email kamu",

@@ -7,6 +7,7 @@ export type Project = {
   image?: string;
   status: "live" | "development";
   featured: boolean;
+  highlight?: boolean;
 };
 
 export const projects: Project[] = [
@@ -14,21 +15,22 @@ export const projects: Project[] = [
     id: "api-management",
     title: "API Management Portal",
     description: {
-      en: "Multi-portal government API management platform for Kemendagri consisting of Developer Portal, Publisher Portal, and Admin Portal. Enables API discovery, subscription management, and analytics for government digital services.",
-      id: "Platform manajemen API pemerintah multi-portal untuk Kemendagri yang terdiri dari Developer Portal, Publisher Portal, dan Admin Portal. Memungkinkan penemuan API, manajemen langganan, dan analitik untuk layanan digital pemerintah.",
+      en: "API gateway platform serving Indonesia's Ministry of Home Affairs — three interconnected portals (Developer, Publisher, Admin) that let government teams publish, discover, and monitor APIs at scale.",
+      id: "Platform API gateway untuk Kementerian Dalam Negeri — tiga portal terintegrasi yang memungkinkan tim pemerintah mempublikasikan, menemukan, dan memantau API secara terpusat dan terukur.",
     },
     tags: ["Next.js", "NestJS", "PostgreSQL", "Kubernetes", "Elastic APM"],
     liveUrl: "https://jdi-admin.kemendagri.go.id/",
     image: "/images/projects/sub-admin-portal.png",
     status: "live",
     featured: true,
+    highlight: true,
   },
   {
     id: "hemdal",
     title: "Hemdal",
     description: {
-      en: "Social media sentiment analysis platform with keyword-based scraping across multiple platforms using RapidAPI. Provides real-time data collection, analysis workflows, and visualization dashboards.",
-      id: "Platform analisis sentimen media sosial dengan scraping berbasis kata kunci di berbagai platform menggunakan RapidAPI. Menyediakan pengumpulan data real-time, alur analisis, dan dashboard visualisasi.",
+      en: "Real-time social media monitoring platform — scrapes keyword-based mentions across platforms and surfaces sentiment trends through live dashboards. Built for teams who need fresh intelligence without manual effort.",
+      id: "Platform pemantauan media sosial real-time — mengambil sebutan berbasis kata kunci dari berbagai platform dan menampilkan tren sentimen melalui dashboard langsung. Untuk tim yang butuh data terkini tanpa kerja manual.",
     },
     tags: ["NestJS", "Next.js", "RapidAPI", "PostgreSQL", "Tailwind CSS"],
     liveUrl: "https://sentiment-analysis-v2.tech.solusiteknologikreatif.id/",
@@ -40,8 +42,8 @@ export const projects: Project[] = [
     id: "smart-booking-room",
     title: "Smart Booking Room DPR RI",
     description: {
-      en: "Intelligent room booking system for DPR RI (Indonesian House of Representatives). Features real-time availability, automated scheduling, conflict detection, and meeting room management.",
-      id: "Sistem pemesanan ruang cerdas untuk DPR RI. Dilengkapi dengan ketersediaan real-time, penjadwalan otomatis, deteksi konflik, dan manajemen ruang rapat.",
+      en: "Room scheduling system for Indonesia's House of Representatives — eliminates double-bookings and manual coordination across meeting rooms with real-time availability and automated conflict detection.",
+      id: "Sistem penjadwalan ruang untuk DPR RI — menghilangkan pemesanan ganda dan koordinasi manual antar ruang rapat dengan ketersediaan real-time dan deteksi konflik otomatis.",
     },
     tags: ["NestJS", "Next.js", "PostgreSQL", "Tailwind CSS"],
     liveUrl: "https://smart-booking-room.tech.solusiteknologikreatif.id/",
@@ -53,8 +55,8 @@ export const projects: Project[] = [
     id: "satria-muda-indonesia",
     title: "Satria Muda Indonesia",
     description: {
-      en: "Comprehensive sports management platform featuring digital scoring system, event management, athlete & member profiles, and CMS content management. Built for national sports organization.",
-      id: "Platform manajemen olahraga komprehensif dengan sistem penilaian digital, manajemen event, profil atlet & anggota, dan manajemen konten CMS. Dibangun untuk organisasi olahraga nasional.",
+      en: "End-to-end sports management platform for a national basketball organization — live digital scoring, event management, athlete profiles, and a headless CMS for editorial content, all in one system.",
+      id: "Platform manajemen olahraga end-to-end untuk organisasi basket nasional — penilaian digital langsung, manajemen event, profil atlet, dan CMS konten editorial dalam satu sistem terintegrasi.",
     },
     tags: ["NestJS", "Next.js", "Shadcn UI", "PostgreSQL", "Sanity CMS"],
     liveUrl: "https://satriamudaindonesia.com/",
@@ -66,8 +68,8 @@ export const projects: Project[] = [
     id: "sipd-kemendagri",
     title: "SIPD Kemendagri",
     description: {
-      en: "Government financial information system (Sistem Informasi Pemerintahan Daerah) for Kemendagri. A comprehensive platform for regional government financial planning and reporting.",
-      id: "Sistem Informasi Pemerintahan Daerah untuk Kemendagri. Platform komprehensif untuk perencanaan dan pelaporan keuangan pemerintah daerah.",
+      en: "Regional government financial system for Kemendagri — supports budget planning and expenditure reporting across regional governments throughout Indonesia.",
+      id: "Sistem keuangan pemerintah daerah untuk Kemendagri — mendukung perencanaan anggaran dan pelaporan belanja di seluruh pemerintah daerah Indonesia.",
     },
     tags: ["Next.js", "NestJS", "PostgreSQL", "Kubernetes"],
     image: undefined,
