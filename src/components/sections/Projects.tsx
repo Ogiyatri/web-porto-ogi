@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-function TiltCard({ children, className }: { children: React.ReactNode; className?: string }) {
+function TiltCard({ children, className }: Readonly<{ children: React.ReactNode; className?: string }>) {
   const ref = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);

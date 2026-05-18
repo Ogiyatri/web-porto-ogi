@@ -4,7 +4,8 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
+  // "standalone" only for Docker builds — Vercel handles its own output
+  ...(process.env.DOCKER_BUILD === "true" ? { output: "standalone" } : {}),
   images: {
     remotePatterns: [
       {

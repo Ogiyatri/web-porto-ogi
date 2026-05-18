@@ -13,7 +13,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN yarn build
+RUN DOCKER_BUILD=true yarn build
 
 # ── Stage 3: Production runner ────────────────────────────────────────────
 FROM node:20-alpine AS runner
