@@ -4,7 +4,7 @@ export type Project = {
   description: { en: string; id: string };
   tags: string[];
   liveUrl?: string;
-  image: string;
+  image?: string;
   status: "live" | "development";
   featured: boolean;
 };
@@ -19,20 +19,20 @@ export const projects: Project[] = [
     },
     tags: ["Next.js", "NestJS", "PostgreSQL", "Kubernetes", "Elastic APM"],
     liveUrl: "https://jdi.kemendagri.go.id/",
-    image: "/images/projects/api-management.png",
+    image: "/images/projects/developer-portal.png",
     status: "live",
     featured: true,
   },
   {
-    id: "sentiment-analysis",
-    title: "Sentiment Analysis Platform",
+    id: "hemdal",
+    title: "Hemdal",
     description: {
       en: "Social media sentiment analysis platform with keyword-based scraping across multiple platforms using RapidAPI. Provides real-time data collection, analysis workflows, and visualization dashboards.",
       id: "Platform analisis sentimen media sosial dengan scraping berbasis kata kunci di berbagai platform menggunakan RapidAPI. Menyediakan pengumpulan data real-time, alur analisis, dan dashboard visualisasi.",
     },
     tags: ["NestJS", "Next.js", "RapidAPI", "PostgreSQL", "Tailwind CSS"],
     liveUrl: "https://sentiment-analysis-v2.tech.solusiteknologikreatif.id/",
-    image: "/images/projects/sentiment-analysis.png",
+    image: "/images/projects/hemdal.png",
     status: "live",
     featured: true,
   },
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     },
     tags: ["NestJS", "Next.js", "PostgreSQL", "Tailwind CSS"],
     liveUrl: "https://smart-booking-room.tech.solusiteknologikreatif.id/",
-    image: "/images/projects/smart-booking.png",
+    image: "/images/projects/smart-booking-room.png",
     status: "live",
     featured: true,
   },
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     },
     tags: ["NestJS", "Next.js", "Shadcn UI", "PostgreSQL", "Sanity CMS"],
     liveUrl: "https://satriamudaindonesia.com/",
-    image: "/images/projects/satria-muda.png",
+    image: "/images/projects/smi-member.png",
     status: "live",
     featured: true,
   },
@@ -70,7 +70,7 @@ export const projects: Project[] = [
       id: "Sistem Informasi Pemerintahan Daerah untuk Kemendagri. Platform komprehensif untuk perencanaan dan pelaporan keuangan pemerintah daerah.",
     },
     tags: ["Next.js", "NestJS", "PostgreSQL", "Kubernetes"],
-    image: "/images/projects/sipd.png",
+    image: undefined,
     status: "development",
     featured: false,
   },

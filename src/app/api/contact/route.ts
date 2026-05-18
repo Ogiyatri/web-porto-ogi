@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
     } else {
       const resend = new Resend(resendKey);
       const contactEmail =
-        process.env.CONTACT_EMAIL ?? "ogiyatrimalakiano@gmail.com";
+        process.env.CONTACT_EMAIL ?? "ogiyatrimalakiano23@gmail.com";
 
       const { error: emailError } = await resend.emails.send({
         from: "Portfolio Contact <onboarding@resend.dev>",

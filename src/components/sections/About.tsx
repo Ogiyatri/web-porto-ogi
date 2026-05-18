@@ -69,7 +69,7 @@ export function About() {
                     alt="Ogi Yatri Malakiano"
                     fill
                     className="object-cover"
-                    style={{ objectPosition: "50% 20%" }}
+                    style={{ objectPosition: "50% 100%" }}
                   />
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />

@@ -230,7 +230,7 @@ export function Hero() {
                       alt="Ogi Yatri Malakiano"
                       fill
                       className="object-cover"
-                      style={{ objectPosition: "50% 25%" }}
+                      style={{ objectPosition: "50% 100%" }}
                       priority
                     />
                   </div>

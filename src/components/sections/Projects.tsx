@@ -88,7 +88,7 @@ export function Projects() {
                 <div className="h-full bg-background border border-border rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 flex flex-col">
                   {/* Image */}
                   <div className="relative h-48 bg-gradient-to-br from-violet-600/20 to-indigo-600/20 overflow-hidden">
-                    {!imageErrors[project.id] ? (
+                    {project.image && !imageErrors[project.id] ? (
                       <Image
                         src={project.image}
                         alt={project.title}
