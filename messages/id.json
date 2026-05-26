@@ -20,12 +20,12 @@
     "title": "Sedikit tentang saya",
     "subtitle": "siapa yang ada di balik layar",
     "description1": "Saya besar di Padang, Sumatera Barat dan kuliah Teknik Komputer di Universitas Andalas — lulus Cumlaude, yang sampai sekarang masih bikin saya sedikit kaget. Setelah lulus langsung pindah ke Jakarta dan bergabung dengan Solusi Teknologi Kreatif.",
-    "description2": "Sejak itu saya mengerjakan platform yang dipakai Kemendagri, DPR RI, dan organisasi olahraga nasional. Saya peduli dengan kode yang bersih, observabilitas yang baik, dan membangun sistem yang benar-benar tahan di production.",
+    "description2": "Sebagian besar yang saya bangun berjalan di jaringan pemerintah yang lambat dengan uptime ketat — itu yang membuat saya obsesif soal observabilitas, structured logging, dan menjaga API tetap efisien di bawah beban nyata.",
     "stats": {
       "projects": "proyek selesai",
-      "modules": "modul backend",
+      "agencies": "instansi pemerintah",
       "features": "fitur UI",
-      "experience": "tahun pengalaman"
+      "gpa": "IPK · Cumlaude"
     },
     "location": "Jakarta Selatan, Indonesia",
     "availability": "Terbuka untuk proyek baru"

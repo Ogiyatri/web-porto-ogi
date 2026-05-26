@@ -3,14 +3,14 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { MapPin, Briefcase, GraduationCap, Zap } from "lucide-react";
+import { MapPin, Briefcase, GraduationCap, Building2 } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
   { key: "projects", value: "7+" },
-  { key: "modules", value: "20+" },
+  { key: "agencies", value: "3" },
   { key: "features", value: "30+" },
-  { key: "experience", value: "1+" },
+  { key: "gpa", value: "3.63" },
 ];
 
 function AnimatedCounter({ value }: Readonly<{ value: string }>) {
@@ -97,10 +97,10 @@ export function About() {
                 className="absolute -top-6 -left-6 bg-background border border-border rounded-xl p-4 shadow-xl"
               >
                 <div className="flex items-center gap-2 text-sm">
-                  <Zap className="h-4 w-4 text-yellow-500" />
+                  <Building2 className="h-4 w-4 text-primary" />
                   <div>
-                    <div className="font-semibold text-xs text-green-500">Available</div>
-                    <div className="text-muted-foreground text-xs">Open to opportunities</div>
+                    <div className="font-semibold text-xs">3 Gov Agencies</div>
+                    <div className="text-muted-foreground text-xs">Kemendagri · DPR RI · KONI</div>
                   </div>
                 </div>
               </motion.div>
@@ -149,7 +149,7 @@ export function About() {
                 >
                   <AnimatedCounter value={stat.value} />
                   <div className="text-xs text-muted-foreground mt-1">
-                    {t(`stats.${stat.key}` as "stats.projects" | "stats.modules" | "stats.features" | "stats.experience")}
+                    {t(`stats.${stat.key}` as "stats.projects" | "stats.agencies" | "stats.features" | "stats.gpa")}
                   </div>
                 </div>
               ))}

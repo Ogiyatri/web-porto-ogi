@@ -20,12 +20,12 @@
     "title": "A bit about me",
     "subtitle": "who's behind the keyboard",
     "description1": "I grew up in Padang, West Sumatra and studied Computer Engineering at Universitas Andalas — graduated Cumlaude, which still surprises me a little. Moved to Jakarta right after and joined Solusi Teknologi Kreatif.",
-    "description2": "Since then I've worked on platforms used by Kemendagri, DPR RI, and national sports organizations. I care about clean code, good observability, and building things that actually hold up in production.",
+    "description2": "Most of what I've built runs inside slow government networks with strict uptime requirements — that's what made me obsessive about observability, structured logging, and keeping APIs lean under real load.",
     "stats": {
       "projects": "projects shipped",
-      "modules": "backend modules",
+      "agencies": "gov agencies",
       "features": "UI features",
-      "experience": "year of exp."
+      "gpa": "GPA · Cum Laude"
     },
     "location": "South Jakarta, Indonesia",
     "availability": "Open to new projects"

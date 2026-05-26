@@ -146,7 +146,7 @@ export function Hero() {
                   2000,
                   "Frontend Developer",
                   2000,
-                  "DevOps Enthusiast",
+                  "API & Systems Engineer",
                   2000,
                 ]}
                 wrapper="span"
@@ -204,7 +204,7 @@ export function Hero() {
             >
               <p className="text-xs text-muted-foreground font-mono">
                 <span className="text-primary">▸ currently</span>{" "}
-                building at Solusi Teknologi Kreatif — 7 projects, 1+ year
+                building at Solusi Teknologi Kreatif · exploring distributed tracing & OTel
               </p>
             </motion.div>
           </div>
