@@ -12,21 +12,37 @@ import { ScrollProgress } from "@/components/common/ScrollProgress";
 import "../globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://web-porto-ogi.vercel.app"),
   title: "Ogi Yatri Malakiano — Fullstack Developer",
   description:
     "Fullstack Developer based in Jakarta — built production apps for Kemendagri, DPR RI, and national organizations. Next.js, NestJS, TypeScript, Kubernetes.",
   keywords: ["Fullstack Developer", "Next.js", "NestJS", "TypeScript", "Jakarta", "Indonesia", "Kemendagri", "Backend Engineer"],
   authors: [{ name: "Ogi Yatri Malakiano" }],
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
   openGraph: {
     title: "Ogi Yatri Malakiano — Fullstack Developer",
     description: "Built production apps for Kemendagri, DPR RI, and national organizations. Based in Jakarta, Indonesia.",
     type: "website",
     locale: "en_US",
+    url: "https://web-porto-ogi.vercel.app",
+    siteName: "Ogi Yatri Malakiano",
+    images: [
+      {
+        url: "/images/profile/ogi-1.png",
+        width: 1200,
+        height: 630,
+        alt: "Ogi Yatri Malakiano — Fullstack Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ogi Yatri Malakiano — Fullstack Developer",
     description: "Built production apps for Kemendagri, DPR RI, and national organizations. Based in Jakarta, Indonesia.",
+    images: ["/images/profile/ogi-1.png"],
   },
 };
 
@@ -35,10 +51,16 @@ const jsonLd = {
   "@type": "Person",
   name: "Ogi Yatri Malakiano",
   url: "https://web-porto-ogi.vercel.app",
+  image: "https://web-porto-ogi.vercel.app/images/profile/ogi-1.png",
   jobTitle: "Fullstack Developer",
+  email: "ogiyatrimalakiano@gmail.com",
   worksFor: {
     "@type": "Organization",
     name: "CV. Solusi Teknologi Kreatif",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Universitas Andalas",
   },
   address: {
     "@type": "PostalAddress",
@@ -49,7 +71,8 @@ const jsonLd = {
     "https://github.com/ogiyatri",
     "https://www.linkedin.com/in/ogiyatrimalakiano/",
   ],
-  knowsAbout: ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Kubernetes", "Docker"],
+  knowsAbout: ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Kubernetes", "Docker", "React", "Node.js"],
+  knowsLanguage: ["en", "id"],
 };
 
 export function generateStaticParams() {

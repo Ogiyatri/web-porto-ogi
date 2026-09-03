@@ -4,6 +4,7 @@
     "skills": "Skills",
     "experience": "Experience",
     "projects": "Projects",
+    "recognition": "Recognition",
     "contact": "Contact",
     "downloadCV": "Download CV"
   },
@@ -14,7 +15,9 @@
     "description": "I've shipped production apps used by Kemendagri, DPR RI, and national organizations — the kind where real users depend on them daily. Currently building at Solusi Teknologi Kreatif, South Jakarta.",
     "cta": "See my work",
     "hireCta": "Let's talk",
-    "scrollDown": "scroll down"
+    "scrollDown": "scroll down",
+    "responseTime": "replies within 24h",
+    "currently": "currently building at Solusi Teknologi Kreatif"
   },
   "about": {
     "title": "A bit about me",
@@ -28,7 +31,9 @@
       "experience": "year of exp."
     },
     "location": "South Jakarta, Indonesia",
-    "availability": "Open to new projects"
+    "availability": "Open to new projects",
+    "availabilityDetail": "Full-time · Contract · Remote-friendly",
+    "english": "English · Professional working proficiency"
   },
   "skills": {
     "title": "Tools I reach for",
@@ -56,6 +61,28 @@
       "live": "Live",
       "development": "In progress"
     }
+  },
+  "recognition": {
+    "title": "What people say",
+    "subtitle": "verifiable signals, not testimonials I wrote myself",
+    "techLead": {
+      "label": "Tech Lead shout-out · SMI project",
+      "quote": "What I'm most proud of isn't the features, but the team. And as Tech Lead, I learned more from them than I expected to.",
+      "author": "Asraf M. Izzuddin",
+      "role": "Tech Lead @ Solusi Teknologi Kreatif",
+      "link": "View original post on LinkedIn"
+    },
+    "education": {
+      "label": "Academic recognition",
+      "title": "Cum Laude · GPA 3.63 / 4.00",
+      "subtitle": "Universitas Andalas · Computer Engineering, 2024"
+    },
+    "trust": {
+      "label": "Trusted to build for",
+      "title": "Government & national organizations",
+      "subtitle": "Kemendagri · DPR RI · KONI"
+    },
+    "cta": "Want a reference? Email me — I'll connect you with my Tech Lead and former colleagues."
   },
   "contact": {
     "title": "Say hello",

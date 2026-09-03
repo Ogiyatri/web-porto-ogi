@@ -3,6 +3,8 @@ export type Project = {
   title: string;
   description: { en: string; id: string };
   tags: string[];
+  role?: { en: string; id: string };
+  duration?: string;
   liveUrl?: string;
   image?: string;
   status: "live" | "development";
@@ -19,6 +21,8 @@ export const projects: Project[] = [
       id: "Platform API gateway untuk Kementerian Dalam Negeri — tiga portal terintegrasi yang memungkinkan tim pemerintah mempublikasikan, menemukan, dan memantau API secara terpusat dan terukur.",
     },
     tags: ["Next.js", "NestJS", "PostgreSQL", "Kubernetes", "Elastic APM"],
+    role: { en: "Fullstack · Team of 5", id: "Fullstack · Tim 5 orang" },
+    duration: "2024 — present",
     liveUrl: "https://jdi-admin.kemendagri.go.id/",
     image: "/images/projects/sub-admin-portal.png",
     status: "live",
@@ -33,7 +37,9 @@ export const projects: Project[] = [
       id: "Platform pemantauan media sosial real-time — mengambil sebutan berbasis kata kunci dari berbagai platform dan menampilkan tren sentimen melalui dashboard langsung. Untuk tim yang butuh data terkini tanpa kerja manual.",
     },
     tags: ["NestJS", "Next.js", "RapidAPI", "PostgreSQL", "Tailwind CSS"],
-    liveUrl: "https://sentiment-analysis-v2.tech.solusiteknologikreatif.id/",
+    role: { en: "Fullstack · Team of 3", id: "Fullstack · Tim 3 orang" },
+    duration: "2024",
+    liveUrl: "https://www.hemdal.id/",
     image: "/images/projects/hemdal.png",
     status: "live",
     featured: true,
@@ -46,6 +52,8 @@ export const projects: Project[] = [
       id: "Sistem penjadwalan ruang untuk DPR RI — menghilangkan pemesanan ganda dan koordinasi manual antar ruang rapat dengan ketersediaan real-time dan deteksi konflik otomatis.",
     },
     tags: ["NestJS", "Next.js", "PostgreSQL", "Tailwind CSS"],
+    role: { en: "Fullstack", id: "Fullstack" },
+    duration: "2024",
     liveUrl: "https://smart-booking-room.tech.solusiteknologikreatif.id/",
     image: "/images/projects/smart-booking-room.png",
     status: "live",
@@ -59,6 +67,8 @@ export const projects: Project[] = [
       id: "Platform manajemen olahraga end-to-end untuk organisasi basket nasional — penilaian digital langsung, manajemen event, profil atlet, dan CMS konten editorial dalam satu sistem terintegrasi.",
     },
     tags: ["NestJS", "Next.js", "Shadcn UI", "PostgreSQL", "Sanity CMS"],
+    role: { en: "Fullstack · Team of 4", id: "Fullstack · Tim 4 orang" },
+    duration: "2024 — 2025",
     liveUrl: "https://satriamudaindonesia.com/",
     image: "/images/projects/smi-member.png",
     status: "live",
@@ -72,6 +82,8 @@ export const projects: Project[] = [
       id: "Sistem keuangan pemerintah daerah untuk Kemendagri — mendukung perencanaan anggaran dan pelaporan belanja di seluruh pemerintah daerah Indonesia.",
     },
     tags: ["Next.js", "NestJS", "PostgreSQL", "Kubernetes"],
+    role: { en: "Backend", id: "Backend" },
+    duration: "2025 — present",
     image: undefined,
     status: "development",
     featured: false,

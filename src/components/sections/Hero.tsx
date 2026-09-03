@@ -1,10 +1,10 @@
 "use client";
 
-import { useRef, Suspense } from "react";
+import { useRef, useState, useEffect, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { TypeAnimation } from "react-type-animation";
-import { ArrowDown, ExternalLink, Mail } from "lucide-react";
+import { ArrowDown, ExternalLink, Mail, Clock } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Canvas, useFrame } from "@react-three/fiber";
@@ -63,17 +63,28 @@ function Scene() {
 
 export function Hero() {
   const t = useTranslations("hero");
+  const [enable3D, setEnable3D] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px) and (prefers-reduced-motion: no-preference)");
+    const update = () => setEnable3D(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* 3D Background */}
-      <div className="absolute inset-0 -z-10">
-        <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
-          <Suspense fallback={null}>
-            <Scene />
-          </Suspense>
-        </Canvas>
-      </div>
+      {/* 3D Background — desktop only, respects reduced-motion */}
+      {enable3D && (
+        <div className="absolute inset-0 -z-10">
+          <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
+            <Suspense fallback={null}>
+              <Scene />
+            </Suspense>
+          </Canvas>
+        </div>
+      )}
 
       {/* Gradient overlays */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-background via-background/90 to-background/60" />
@@ -115,8 +126,9 @@ export function Hero() {
                 </span>
                 {t("greeting")}
               </span>
-              <span className="text-xs text-muted-foreground font-mono hidden sm:block">
-                Jakarta, Indonesia 🇮🇩
+              <span className="text-xs text-muted-foreground font-mono hidden sm:inline-flex items-center gap-1">
+                <Clock className="h-3 w-3" />
+                WIB (UTC+7) · {t("responseTime")}
               </span>
             </motion.div>
 
@@ -204,7 +216,7 @@ export function Hero() {
             >
               <p className="text-xs text-muted-foreground font-mono">
                 <span className="text-primary">▸ currently</span>{" "}
-                building at Solusi Teknologi Kreatif — 7 projects, 1+ year
+                {t("currently")}
               </p>
             </motion.div>
           </div>

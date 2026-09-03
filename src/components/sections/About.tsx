@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { MapPin, Briefcase, GraduationCap, Zap } from "lucide-react";
+import { MapPin, Briefcase, GraduationCap, Zap, Languages, Clock } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
@@ -134,6 +134,14 @@ export function About() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
                 </span>
                 <span>{t("availability")}</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm bg-muted rounded-lg px-3 py-2">
+                <Clock className="h-4 w-4 text-primary" />
+                <span>{t("availabilityDetail")}</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm bg-muted rounded-lg px-3 py-2">
+                <Languages className="h-4 w-4 text-primary" />
+                <span>{t("english")}</span>
               </div>
             </motion.div>
 

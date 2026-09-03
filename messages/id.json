@@ -4,6 +4,7 @@
     "skills": "Keahlian",
     "experience": "Pengalaman",
     "projects": "Proyek",
+    "recognition": "Penghargaan",
     "contact": "Kontak",
     "downloadCV": "Unduh CV"
   },
@@ -14,7 +15,9 @@
     "description": "Saya sudah mengembangkan aplikasi production untuk Kemendagri, DPR RI, dan organisasi nasional — yang digunakan nyata oleh ribuan pengguna setiap harinya. Saat ini di Solusi Teknologi Kreatif, Jakarta Selatan.",
     "cta": "Lihat proyek saya",
     "hireCta": "Ayo ngobrol",
-    "scrollDown": "scroll ke bawah"
+    "scrollDown": "scroll ke bawah",
+    "responseTime": "biasanya balas <24 jam",
+    "currently": "lagi ngerjain proyek di Solusi Teknologi Kreatif"
   },
   "about": {
     "title": "Sedikit tentang saya",
@@ -28,7 +31,9 @@
       "experience": "tahun pengalaman"
     },
     "location": "Jakarta Selatan, Indonesia",
-    "availability": "Terbuka untuk proyek baru"
+    "availability": "Terbuka untuk proyek baru",
+    "availabilityDetail": "Full-time · Kontrak · Remote-friendly",
+    "english": "Bahasa Inggris · Professional working proficiency"
   },
   "skills": {
     "title": "Tools yang saya pakai",
@@ -56,6 +61,28 @@
       "live": "Live",
       "development": "Sedang dikerjakan"
     }
+  },
+  "recognition": {
+    "title": "Apa kata orang",
+    "subtitle": "sinyal yang bisa diverifikasi, bukan testimonial yang saya tulis sendiri",
+    "techLead": {
+      "label": "Shout-out dari Tech Lead · proyek SMI",
+      "quote": "Yang paling membanggakan bukan fiturnya, tapi timnya. Dan saya sendiri sebagai Tech Lead yang lebih banyak belajar dari mereka daripada yang saya kira.",
+      "author": "Asraf M. Izzuddin",
+      "role": "Tech Lead @ Solusi Teknologi Kreatif",
+      "link": "Lihat post asli di LinkedIn"
+    },
+    "education": {
+      "label": "Penghargaan akademik",
+      "title": "Cumlaude · IPK 3.63 / 4.00",
+      "subtitle": "Universitas Andalas · Teknik Komputer, 2024"
+    },
+    "trust": {
+      "label": "Dipercaya membangun untuk",
+      "title": "Pemerintah & organisasi nasional",
+      "subtitle": "Kemendagri · DPR RI · KONI"
+    },
+    "cta": "Butuh referensi? Email saya — saya akan hubungkan dengan Tech Lead dan rekan kerja saya."
   },
   "contact": {
     "title": "Sapa saya",

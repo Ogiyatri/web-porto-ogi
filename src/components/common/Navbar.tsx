@@ -14,6 +14,7 @@ const navLinks = [
   { key: "skills", href: "#skills" },
   { key: "experience", href: "#experience" },
   { key: "projects", href: "#projects" },
+  { key: "recognition", href: "#recognition" },
   { key: "contact", href: "#contact" },
 ];
 
@@ -24,6 +25,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
   const router = useRouter();
   const pathname = usePathname();
 
@@ -32,6 +34,24 @@ export function Navbar() {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const sectionIds = navLinks.map((l) => l.href.slice(1));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) setActiveSection(visible.target.id);
+      },
+      { rootMargin: "-40% 0px -50% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] }
+    );
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
   }, []);
 
   const toggleLocale = () => {
@@ -72,15 +92,23 @@ export function Navbar() {
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <button
-                key={link.key}
-                onClick={() => scrollTo(link.href)}
-                className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-accent"
-              >
-                {t(link.key as "about" | "skills" | "experience" | "projects" | "contact")}
-              </button>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.href.slice(1);
+              return (
+                <button
+                  key={link.key}
+                  onClick={() => scrollTo(link.href)}
+                  className={cn(
+                    "px-3 py-2 text-sm transition-colors rounded-md hover:bg-accent",
+                    isActive
+                      ? "text-foreground font-medium bg-accent/50"
+                      : "text-muted-foreground hover:text-foreground"
+                  )}
+                >
+                  {t(link.key as "about" | "skills" | "experience" | "projects" | "recognition" | "contact")}
+                </button>
+              );
+            })}
           </div>
 
           {/* Actions */}
@@ -177,15 +205,23 @@ export function Navbar() {
             className="md:hidden bg-background/95 backdrop-blur-md border-b border-border"
           >
             <div className="px-4 py-4 flex flex-col gap-2">
-              {navLinks.map((link) => (
-                <button
-                  key={link.key}
-                  onClick={() => scrollTo(link.href)}
-                  className="text-left px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-accent"
-                >
-                  {t(link.key as "about" | "skills" | "experience" | "projects" | "contact")}
-                </button>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = activeSection === link.href.slice(1);
+                return (
+                  <button
+                    key={link.key}
+                    onClick={() => scrollTo(link.href)}
+                    className={cn(
+                      "text-left px-3 py-2 text-sm transition-colors rounded-md hover:bg-accent",
+                      isActive
+                        ? "text-foreground font-medium bg-accent/50"
+                        : "text-muted-foreground hover:text-foreground"
+                    )}
+                  >
+                    {t(link.key as "about" | "skills" | "experience" | "projects" | "recognition" | "contact")}
+                  </button>
+                );
+              })}
               <div className="flex items-center gap-2 pt-2 border-t border-border">
                 <Button variant="outline" size="sm" onClick={toggleLocale} className="gap-2">
                   <Globe className="h-3.5 w-3.5" />

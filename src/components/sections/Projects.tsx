@@ -185,6 +185,13 @@ export function Projects() {
                         </div>
 
                         <h3 className="font-bold text-xl md:text-2xl mb-3">{highlight.title}</h3>
+                        {(highlight.role || highlight.duration) && (
+                          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground font-mono mb-3">
+                            {highlight.role && <span>{locale === "en" ? highlight.role.en : highlight.role.id}</span>}
+                            {highlight.role && highlight.duration && <span className="opacity-50">·</span>}
+                            {highlight.duration && <span>{highlight.duration}</span>}
+                          </div>
+                        )}
                         <p className="text-muted-foreground leading-relaxed mb-5">
                           {locale === "en" ? highlight.description.en : highlight.description.id}
                         </p>
@@ -228,7 +235,14 @@ export function Projects() {
                     />
 
                     <div className="p-5 flex flex-col flex-1">
-                      <h3 className="font-bold text-base mb-2">{project.title}</h3>
+                      <h3 className="font-bold text-base mb-1.5">{project.title}</h3>
+                      {(project.role || project.duration) && (
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] text-muted-foreground font-mono mb-2">
+                          {project.role && <span>{locale === "en" ? project.role.en : project.role.id}</span>}
+                          {project.role && project.duration && <span className="opacity-50">·</span>}
+                          {project.duration && <span>{project.duration}</span>}
+                        </div>
+                      )}
                       <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-4">
                         {locale === "en" ? project.description.en : project.description.id}
                       </p>
