@@ -33,7 +33,7 @@ export const projects: Project[] = [
       id: "Platform pemantauan media sosial real-time — mengambil sebutan berbasis kata kunci dari berbagai platform dan menampilkan tren sentimen melalui dashboard langsung. Untuk tim yang butuh data terkini tanpa kerja manual.",
     },
     tags: ["NestJS", "Next.js", "RapidAPI", "PostgreSQL", "Tailwind CSS"],
-    liveUrl: "https://sentiment-analysis-v2.tech.solusiteknologikreatif.id/",
+    liveUrl: "https://www.hemdal.id/",
     image: "/images/projects/hemdal.png",
     status: "live",
     featured: true,
