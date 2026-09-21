@@ -138,7 +138,7 @@ export function Navbar() {
             )}
 
             <Button size="sm" asChild className="gap-2">
-              <a href="/cv-ogi-yatri-malakiano.pdf" download>
+              <a href="/cv-ogi-yatri-malakiano-2.pdf" download>
                 <Download className="h-3.5 w-3.5" />
                 {t("downloadCV")}
               </a>
@@ -192,7 +192,7 @@ export function Navbar() {
                   {locale === "en" ? "Bahasa Indonesia" : "English"}
                 </Button>
                 <Button size="sm" asChild className="gap-2 flex-1">
-                  <a href="/cv-ogi-yatri-malakiano.pdf" download>
+                  <a href="/cv-ogi-yatri-malakiano-2.pdf" download>
                     <Download className="h-3.5 w-3.5" />
                     {t("downloadCV")}
                   </a>
