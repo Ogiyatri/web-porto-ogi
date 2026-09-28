@@ -72,7 +72,7 @@ export const projects: Project[] = [
       id: "Sistem keuangan pemerintah daerah untuk Kemendagri — mendukung perencanaan anggaran dan pelaporan belanja di seluruh pemerintah daerah Indonesia.",
     },
     tags: ["React.js", "Golang", "PostgreSQL", "Tailwind CSS", "typescript", "Docker", "Kubernetes"],
-    image: undefined,
+    image: "/images/projects/sipd-kemendagri.png",
     status: "development",
     featured: false,
   },
