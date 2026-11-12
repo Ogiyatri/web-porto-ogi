@@ -19,7 +19,7 @@ export function Experience() {
       period: locale === "en" ? "January 2025 – September 2026" : "Januari 2025 – September 2026",
       location: locale === "en" ? "South Jakarta" : "Jakarta Selatan",
       type: locale === "en" ? "Full Time" : "Full Time",
-      current: true,
+      current: false,
       highlights: locale === "en" ? [
         "Contributed to 7 software projects including multi-portal government platforms (Kemendagri)",
         "Implemented monitoring & observability with Elastic APM, Elasticsearch, and Kibana",
