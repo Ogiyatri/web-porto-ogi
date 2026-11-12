@@ -78,7 +78,7 @@
     }
   },
   "footer": {
-    "rights": "Hak cipta dilindungi.",
+    "rights": " ",
     "builtWith": "Dibangun dengan Next.js & banyak kopi"
   }
 }
